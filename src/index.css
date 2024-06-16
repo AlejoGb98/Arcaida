@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .glass {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.23);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.4px);
+        -webkit-backdrop-filter: blur(6.4px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .contentGlass {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.4px);
+        -webkit-backdrop-filter: blur(8.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .buttonGlass{
+        /* From https://css.glass */        
+        background: rgba(255, 255, 255, 0.47);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 1px solid rgba(255, 255, 255, 0.43);
+    }
+
+    .commonPlan{
+        background: #FFFFFF;
+        color: #000;
+    }
+
+    .diamondPlan{
+        background: rgb(178,102,185);
+        background: linear-gradient(144deg, rgba(178,102,185,1) 7%, rgba(85,45,207,1) 98%);
+        color: #FFFFF0;
+    }
+
+    .planGradient{
+        background: rgb(206,144,212);
+        background: linear-gradient(45deg, rgba(206,144,212,1) 9%, rgba(179,147,238,1) 55%, rgba(195,186,242,1) 92%);
+    }
+
+    .planCardGlass{
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);}
+
+    .flexCenter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+body{
+  background-image: url('./assets/bg-blur.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
