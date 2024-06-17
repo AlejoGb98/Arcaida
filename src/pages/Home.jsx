@@ -8,7 +8,7 @@ import BlackButton from '../components/BlackButton'
 const Home = () => {
   return (
     <>
-        <div className='contentGlass container font-unbounded text-center mx-auto py-20 mb-24 px-12'>
+        <div className='contentGlass container flex flex-col items-center font-unbounded text-center mx-auto py-20 mb-24 px-12'>
                 
                 <h1 className="text-6xl mb-24">Descubri el Estilo Sostenible</h1>
 
@@ -20,7 +20,7 @@ const Home = () => {
 
                 </div>
 
-                <div className="flex justify-around w-full text-lg">
+                <div className="flex gap-36 text-lg">
                         <BlackButton
                             text='Suscribirme'
                             link='/suscripcion'
