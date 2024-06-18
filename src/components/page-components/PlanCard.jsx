@@ -6,7 +6,7 @@ const PlanCard = ({plan}) => {
   const {id, name, price, resume, benefits } = plan;
 
   return (
-    <div className={`container py-8 px-8 rounded-2xl
+    <div className={`container py-4 lg:py-8 px-8 rounded-2xl
                      planCardGlass`}>
 
       <div className='text-start mb-4 lg:min-h-32 lg:mb-6'>
@@ -28,7 +28,7 @@ const PlanCard = ({plan}) => {
         </button>        
       </div>    
 
-      <div className='mb-10'>
+      <div className=''>
         {
           benefits.map((benef) => (
             <div className='flex items-start mb-2 lg:mb-4 text-sm' key={benef}>

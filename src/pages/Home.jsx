@@ -12,7 +12,7 @@ const Home = () => {
                 
                 <h1 className="text-lg lg:text-5xl mb-8 lg:mb-24">Descubri el Estilo Sostenible</h1>
 
-                <div className='px-12 lg:px-72'>
+                <div className='px-8 lg:px-72'>
 
                     <p className="lg:text-2xl font-light mb-4 lg:mb-12">Compra, alquila y ahorra con nuestra colección de ropa de segunda mano de alta calidad.</p>
 
@@ -20,7 +20,7 @@ const Home = () => {
 
                 </div>
 
-                <div className="flex gap-8 lg:gap-36">
+                <div className="flex gap-4 md:gap-8 lg:gap-36">
                         <BlackButton
                             text='Suscribirme'
                             link='/suscripcion'

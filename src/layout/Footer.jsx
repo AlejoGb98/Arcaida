@@ -13,10 +13,10 @@ const Footer = () => {
   console.log(width)
 
   return (
-    <footer className='font-unbounded glass py-6 mb-6 mx-auto w-11/12 font-light text-xs lg:text-base'>
-      <img src={Logo} className='w-36 mx-auto mb-6'/>
+    <footer className='font-unbounded glass py-6 mb-6 px-2 mx-auto w-11/12 font-light text-xs lg:text-base'>
+      <img src={Logo} className='w-24 lg:w-36 mx-auto mb-6'/>
 
-      <div className='grid grid-cols-3'>
+      <div className='grid grid-cols-3 gap-2'>
         <div className='text-center flex flex-col gap-2 lg:gap-4 items-start mx-auto md:mb-8'>
           <a target='_blank' href='https://www.instagram.com/arcaida.secondhand/?hl=es'>
             <div className='flexCenter gap-2'>
