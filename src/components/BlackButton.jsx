@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const BlackButton = ({text, extraClass, link}) => {
   return (
-    <button className={`py-2 px-6 min-w-48 rounded-lg transition-all border-2 border-black
+    <button className={`py-1 min-w-36 font-ligth text-sm lg:text-lg lg:py-2 lg:px-6 lg:min-w-48 rounded-lg transition-all border-1 lg:border-2 border-black
                                 hover:bg-black hover:text-slate-100 ${extraClass}`}>
             
             {

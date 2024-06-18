@@ -1,29 +1,62 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink} from 'react-router-dom'
 import logo from '../assets/logo.png'
+import ReadScreenWidth from '../hooks/ReadScreenWidth'
 
 
-const Header = () => {
+const Header = ({path}) => {
+
+    const width = ReadScreenWidth();
+
+    const pathname = () => {
+        switch(path){
+        case '/' : return 'Inicio';
+        case '/como-funciona' : return 'Como Funciona';
+        case '/beneficios' : return 'Beneficios';
+        case '/suscripcion' : return 'Suscribirme'
+        }
+
+    }
+    
+
+    
   return (
     <>
-        <nav className='flex justify-around items-center glass fixed top-6 left-0 right-0 mx-auto w-11/12 p-4 z-50 lg:px-6 py-2.5 font-unbounded'>
+        <nav className='flex lg:justify-around justify-between items-center glass fixed top-6 left-0 right-0 mx-auto w-11/12 lg:p-4 z-50 px-8 py-2.5 font-unbounded'>
             <Link to='/'>
-                <img src={logo} className="w-28" alt="Arcaida Logo" />
+                <img src={logo} className="w-20 md:w-20 lg:w-36" alt="Arcaida Logo" />
             </Link>
 
-            <div className='flex gap-12 text-lg'>
+            {width < 768 ? 
+                <div className="dropdown font-light">
+                    <button className="dropdown-toggle text-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       {pathname()}
+                    </button>
 
-                <NavLink to='/' className=''> Inicio </NavLink>
-                <NavLink to='/como-funciona' className=''> Como Funciona </NavLink>
-                <NavLink to='/beneficios' className=''> Beneficios </NavLink>
+                    <ul className="dropdown-menu planCardGlass font-light text-xs px-3 mt-3">
+                    <li className='mt-1'><NavLink to='/' className=''> Inicio </NavLink></li>
+                    <li className='mt-1'><NavLink to='/como-funciona' className=''> Como Funciona </NavLink></li>
+                    <li className='mt-1'><NavLink to='/beneficios' className=''> Beneficios </NavLink></li>
+                    <li className='mt-1'><NavLink to='/suscripcion' className=''> Suscribirme </NavLink></li>
+                    </ul>
+              </div>
+            : 
+            <>
+                <div className='flex gap-4 lg:gap-12 text-xs lg:text-lg'>
 
-            </div>
+                    <NavLink to='/' className=''> Inicio </NavLink>
+                    <NavLink to='/como-funciona' className=''> Como Funciona </NavLink>
+                    <NavLink to='/beneficios' className=''> Beneficios </NavLink>
 
-            <Link to='/suscripcion'>
-                <button className='font-light w-fit border p-2 rounded-xl border-stone-700'>
-                    Suscribirme
-                </button>
-            </Link>
+                </div>
+                <Link to='/suscripcion'>
+                    <button className='text-xs font-light w-fit border-1 p-1 lg:p-2 rounded-xl border-stone-700'>
+                        Suscribirme
+                    </button>
+                </Link>
+            </>
+                }
+
 
         </nav>
 

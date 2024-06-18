@@ -2,15 +2,20 @@ import { Outlet } from "react-router-dom"
 import Footer from "./Footer"
 import Header from "./Header"
 
-
+import { useLocation } from "react-router-dom"
 
 const Layout = () => {
 
+  const path = useLocation();
+  console.log(path)
+
   return (
     <>
-        <Header/>
+        <Header
+          path={path.pathname}
+        />
 
-            <div className="bg-center w-full min-h-screen mt-36">
+            <div className="bg-center w-full min-h-screen md:px-0 mt-28 lg:mt-36">
 
                     <Outlet/>
 
