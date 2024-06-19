@@ -13,8 +13,8 @@ const Footer = () => {
   console.log(width)
 
   return (
-    <footer className='font-unbounded glass py-6 mb-6 px-2 mx-auto w-11/12 font-light text-xs lg:text-base'>
-      <img src={Logo} className='w-24 lg:w-36 mx-auto mb-6'/>
+    <footer className='font-unbounded glass py-3 lg:py-6 mb-6 mx-auto w-11/12 font-light text-xs lg:text-base'>
+      <img src={Logo} className='w-24 lg:w-36 mx-auto mb-3 lg:mb-6'/>
 
       <div className='grid grid-cols-3 gap-2'>
         <div className='text-center flex flex-col gap-2 lg:gap-4 items-start mx-auto md:mb-8'>

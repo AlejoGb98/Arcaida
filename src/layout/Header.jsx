@@ -33,7 +33,7 @@ const Header = ({path}) => {
                        {pathname()}
                     </button>
 
-                    <ul className="dropdown-menu planCardGlass font-light text-xs px-3 mt-3">
+                    <ul className="dropdown-menu menuGlass font-light text-xs px-3 mt-3">
                     <li className='mt-1'><NavLink to='/' className=''> Inicio </NavLink></li>
                     <li className='mt-1'><NavLink to='/como-funciona' className=''> Como Funciona </NavLink></li>
                     <li className='mt-1'><NavLink to='/beneficios' className=''> Beneficios </NavLink></li>

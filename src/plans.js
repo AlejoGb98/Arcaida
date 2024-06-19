@@ -30,7 +30,7 @@ const plans = [
     ],
     resume: "Todo del Plan Plata más regalos, personal shopper y envíos flash. ¡Siempre a la moda!"
   },
-  {
+  /* {
     id: 3,
     name: "PLAN DIAMANTE",
     price: 990,
@@ -42,7 +42,7 @@ const plans = [
       "Compra las que te gusten (Con 10% off)"
     ],
     resume: "Alquila 5 prendas al mes, con envío y lavado incluido. ¡Un guardarropa infinito!"
-  }
+  } */
 ];
 
 export default plans;
