@@ -7,7 +7,6 @@ import { useLocation } from "react-router-dom"
 const Layout = () => {
 
   const path = useLocation();
-  console.log(path)
 
   return (
     <>

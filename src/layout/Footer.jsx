@@ -10,10 +10,9 @@ import useWindowWidth from '../hooks/ReadScreenWidth'
 const Footer = () => {
 
  const width = useWindowWidth();
-  console.log(width)
 
   return (
-    <footer className='font-unbounded glass py-3 lg:py-6 mb-6 mx-auto w-11/12 font-light text-xs lg:text-base'>
+    <footer className='font-poppins text-center glass py-3 lg:py-6 mb-6 mx-auto w-11/12 font-light text-xs lg:text-base'>
       <img src={Logo} className='w-24 lg:w-36 mx-auto mb-3 lg:mb-6'/>
 
       <div className='grid grid-cols-3 gap-2'>
@@ -53,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className='text-center text-slate-700 font-light'>Developed by A & A ®</p>
+      <p className='text-center text-slate-700 font-light drop-shadow-md'>Developed by A & A ®</p>
     </footer>
   )
 }

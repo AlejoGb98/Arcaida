@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         unbounded: ['Unbounded', 'sans-serif'],
+        poppins: ['Poppins','sans-serif']
       },
       colors: {
         'pink': '#ffdde2',

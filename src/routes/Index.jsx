@@ -7,8 +7,8 @@ import Suscribe from "../pages/Suscribe";
 import HowItWorks from "../pages/HowItWorks";
 import Benefits from "../pages/Benefits";
 import '../../src/index.css';
-import TyC from "../pages/TyC";
 import FrequentQuestions from "../pages/FrequentQuestions";
+import TermsAndConditions from "../pages/TermsAndConditions";
 
 
 
@@ -37,7 +37,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/terminos-y-condiciones',
-                element: <TyC/>
+                element: <TermsAndConditions/>
             },
             {
                 path: '/preguntas-frecuentes',

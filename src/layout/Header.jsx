@@ -13,7 +13,9 @@ const Header = ({path}) => {
         case '/' : return 'Inicio';
         case '/como-funciona' : return 'Como Funciona';
         case '/beneficios' : return 'Beneficios';
-        case '/suscripcion' : return 'Suscribirme'
+        case '/suscripcion' : return 'Suscribirme';
+        case '/terminos-y-condiciones' : return 'Terminos y Condiciones'
+        case '/preguntas-frecuentes' : return 'Preguntas Frecuentes'
         }
 
     }
@@ -29,7 +31,7 @@ const Header = ({path}) => {
 
             {width < 768 ? 
                 <div className="dropdown font-light">
-                    <button className="dropdown-toggle text-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button className="dropdown-toggle text-xs" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                        {pathname()}
                     </button>
 

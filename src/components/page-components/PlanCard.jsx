@@ -6,8 +6,8 @@ const PlanCard = ({plan}) => {
   const {id, name, price, resume, benefits } = plan;
 
   return (
-    <div className={`container py-4 lg:py-8 px-8 rounded-2xl 
-                     planCardGlass`}>
+    <div className='container py-4 lg:py-8 px-8 rounded-2xl 
+                     planCardGlass'>
 
       <div className='text-start mb-4 lg:min-h-32 lg:mb-6'>
         <p className='lg:mb-4 xl:text-lg'>{name}</p>
