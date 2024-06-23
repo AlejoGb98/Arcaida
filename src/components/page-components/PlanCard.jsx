@@ -33,7 +33,7 @@ const PlanCard = ({plan}) => {
           benefits.map((benef) => (
             <div className='flex items-start mb-2 lg:mb-4 text-sm' key={benef}>
             
-              <img src={Check} className='mr-2 mt-1 w-4'/>
+              <img src={Check} className='mr-2 mt-1 w-2 lg:w-4'/>
 
             <p className='text-xs lg:text-base text-start font-light text-neutral-100
             '>{benef}</p>

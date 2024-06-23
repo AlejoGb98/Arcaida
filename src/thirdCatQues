@@ -1,0 +1,33 @@
+const thirdQuestions = [
+    {
+        id: 1,
+        question: "¿Hay algún tipo de política de devolución para los suscriptores?",
+        answer: [
+          "Al suscribirse el suscriptor debe haber leído previamente los términos y condiciones. Luego de estar suscripto, no se puede solicitar la devolución.",
+          "Pasados los 3 meses de suscripción, el suscriptor puede darse de baja cuando quiera."
+        ]
+      },
+      {
+        id: 2,
+        question: "¿Se renueva automáticamente mi suscripción?",
+        answer: [
+          "Luego de realizada la compra, Mercado Pago renovará automáticamente tu suscripción todos los meses."
+        ]
+      },
+      {
+        id: 3,
+        question: "¿Cómo puedo acceder al soporte técnico o resolver problemas relacionados con mi suscripción?",
+        answer: [
+          "En caso de algún inconveniente o duda sobre tu suscripción, podes comunicarte al (celular de suscripción) o a (email de suscripción), te responderemos lo antes posible."
+        ]
+      },
+      {
+        id: 4,
+        question: "¿Cómo puedo estar seguro de que mis pagos están protegidos al suscribirme a su servicio?",
+        answer: [
+          "ML"
+        ]
+      }
+]
+
+export default thirdQuestions
