@@ -48,10 +48,10 @@ const Header = ({path}) => {
 
                     <NavLink to='/' className=''> Inicio </NavLink>
                     <NavLink to='/como-funciona' className=''> Como Funciona </NavLink>
-                    <NavLink to='/' className=''> Beneficios </NavLink>
+                    <NavLink to='/beneficios' className=''> Beneficios </NavLink>
 
                 </div>
-                <Link to='/suscripcion-completada'>
+                <Link to='/suscripcion'>
                     <button className='font-light w-fit border-1 p-1 md:p-2 rounded-xl border-stone-700'>
                         Suscribirme
                     </button>
