@@ -39,7 +39,7 @@ const Header = ({path}) => {
                     <li className='mt-1'><NavLink to='/' className=''> Inicio </NavLink></li>
                     <li className='mt-1'><NavLink to='/como-funciona' className=''> Como Funciona </NavLink></li>
                     <li className='mt-1'><NavLink to='/beneficios' className=''> Beneficios </NavLink></li>
-                    <li className='mt-1'><NavLink to='/suscripcion' className=''> Suscribirme </NavLink></li>
+                    <li className='mt-1'><NavLink to='/suscripcion-completada' className=''> Suscribirme </NavLink></li>
                     </ul>
               </div>
             : 
