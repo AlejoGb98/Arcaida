@@ -12,7 +12,7 @@ const Footer = () => {
  const width = useWindowWidth();
 
   return (
-    <footer className='font-poppins text-center glass py-3 lg:py-6 mb-6 mx-auto w-11/12 font-light text-xs lg:text-base'>
+    <footer className='font-poppins mb-6 text-center glass py-3 lg:py-6 mx-auto w-11/12 font-light text-xs lg:text-base'>
       <img src={Logo} className='w-24 lg:w-36 mx-auto mb-3 lg:mb-6'/>
 
       <div className='grid grid-cols-3 gap-2'>

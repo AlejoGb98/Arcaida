@@ -35,7 +35,7 @@ const PlanCard = ({plan}) => {
             
               <img src={Check} className='mr-2 mt-1 w-2 lg:w-4'/>
 
-            <p className='text-xs lg:text-base text-start font-light text-neutral-100
+            <p className='font-poppins text-xs lg:text-base text-start font-light text-neutral-100
             '>{benef}</p>
           </div>
           ))

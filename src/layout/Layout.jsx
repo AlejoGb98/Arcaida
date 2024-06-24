@@ -10,17 +10,19 @@ const Layout = () => {
 
   return (
     <>
-        <Header
-          path={path.pathname}
-        />
+      <div className="min-h-screen flex flex-col justify-between">
+            <Header
+              path={path.pathname}
+            />
 
-            <div className="bg-center w-full min-h-screen md:px-0 mt-28 lg:mt-36">
+                <div className="bg-center w-full md:px-0 mt-28 lg:mt-36">
 
-                    <Outlet/>
+                        <Outlet/>
 
-            </div>
+                </div>
 
-        <Footer/>
+            <Footer/>
+      </div>
     </>
 
 

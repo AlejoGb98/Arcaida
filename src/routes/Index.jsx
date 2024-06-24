@@ -6,6 +6,8 @@ import NotFound from "../components/NotFound";
 import Suscribe from "../pages/Suscribe";
 import HowItWorks from "../pages/HowItWorks";
 import Benefits from "../pages/Benefits";
+import Thanks from "../pages/Thanks";
+
 import '../../src/index.css';
 import FrequentQuestions from "../pages/FrequentQuestions";
 import TermsAndConditions from "../pages/TermsAndConditions";
@@ -42,6 +44,10 @@ export const router = createBrowserRouter([
             {
                 path: '/preguntas-frecuentes',
                 element: <FrequentQuestions/>
+            },
+            {
+                path:'/suscripcion-completada',
+                element:<Thanks/>
             }
         ]
 

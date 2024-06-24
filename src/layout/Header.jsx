@@ -52,7 +52,7 @@ const Header = ({path}) => {
 
                 </div>
                 <Link to='/suscripcion'>
-                    <button className='text-xs font-light w-fit border-1 p-1 lg:p-2 rounded-xl border-stone-700'>
+                    <button className='font-light w-fit border-1 p-1 lg:p-2 rounded-xl border-stone-700'>
                         Suscribirme
                     </button>
                 </Link>
